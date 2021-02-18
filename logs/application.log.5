@@ -1,0 +1,105 @@
+2021-02-08 18:22:48,619 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:47]
+2021-02-11 10:49:16,392 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 10:54:36,619 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 13:03:58,853 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 13:04:16,072 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 13:04:30,140 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 13:05:43,258 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 13:07:14,763 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 13:08:54,808 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 13:10:15,286 ERROR: Exception on /reset_password_request [POST] [in /home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ashutosh.mahawar/flaskprojects/application1/app/routes.py", line 171, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/ashutosh.mahawar/flaskprojects/application1/app/email.py", line 13, in send_password_reset_email
+    token = user.get_reset_password_token()
+NameError: name 'user' is not defined
+2021-02-11 13:13:48,450 ERROR: Exception on /reset_password_request [POST] [in /home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ashutosh.mahawar/flaskprojects/application1/app/routes.py", line 171, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/ashutosh.mahawar/flaskprojects/application1/app/email.py", line 13, in send_password_reset_email
+    token = user.get_reset_password_token()
+NameError: name 'user' is not defined
+2021-02-11 13:16:05,376 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 13:16:16,087 ERROR: Exception on /reset_password_request [POST] [in /home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ashutosh.mahawar/flaskprojects/application1/app/routes.py", line 171, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/ashutosh.mahawar/flaskprojects/application1/app/email.py", line 13, in send_password_reset_email
+    token = user.get_reset_password_token()
+NameError: name 'user' is not defined
+2021-02-11 13:16:31,185 INFO: Application startup [in /home/ashutosh.mahawar/flaskprojects/application1/app/__init__.py:49]
+2021-02-11 13:18:46,239 ERROR: Exception on /reset_password_request [POST] [in /home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ashutosh.mahawar/flaskprojects/application1/app/routes.py", line 171, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/ashutosh.mahawar/flaskprojects/application1/app/email.py", line 14, in send_password_reset_email
+    send_email('[Application] Reset Your Password',
+  File "/home/ashutosh.mahawar/flaskprojects/application1/app/email.py", line 10, in send_email
+    mail.send(msg)
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "/home/ashutosh.mahawar/.local/lib/python3.8/site-packages/flask_mail.py", line 158, in configure_host
+    host = smtplib.SMTP(self.mail.server, self.mail.port)
+  File "/usr/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 308, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
